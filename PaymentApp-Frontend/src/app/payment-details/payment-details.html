@@ -1,0 +1,33 @@
+
+<div class="heading-panel text-center py-4 py-md-5 rounded-4">
+  <h1 class="display-6 fw-bold mb-2">Payment Detail Register</h1>
+  <p class="subtitle mb-0">Create and manage card records in one secure workspace</p>
+</div>
+
+<div class="row g-4 mt-1 align-items-start">
+  <div class="col-12 col-xl-5">
+    <div class="surface-card p-3 p-md-4">
+      <app-payment-detail-form />
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-7">
+    <div class="surface-card p-3 p-md-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-start mb-2 border px-4 py-3 rounded-3 detail-item"
+        *ngFor="let pd of service.list">
+        <div class="flex-grow-1 mouse-hover"
+        (click)="populateForm(pd)">
+          <div class="fw-bold owner-name">{{pd.cardOwnerName}}</div>
+          <div class="card-number">{{pd.cardNumber}}</div>
+          <div class="expiry">{{pd.expirationDate}}</div>
+        </div>
+        <span class="text-secondary">
+          <i class="fa-solid fa-trash-can fa-lg mouse-hover delete-icon"
+          (click)="onDelete(pd.paymentDetailId)"></i>
+        </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

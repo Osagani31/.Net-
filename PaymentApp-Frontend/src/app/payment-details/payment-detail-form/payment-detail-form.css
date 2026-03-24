@@ -1,0 +1,29 @@
+label {
+	margin-bottom: 0.45rem;
+	letter-spacing: 0.04em;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.form-control {
+	border-radius: 0.75rem;
+	border-color: #d3deef;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+	border-color: #4a7dcf;
+	box-shadow: 0 0 0 0.2rem rgba(74, 125, 207, 0.15);
+}
+
+.btn-success {
+	border: none;
+	border-radius: 0.8rem;
+	background: linear-gradient(135deg, #1678ca 0%, #15a688 100%);
+	letter-spacing: 0.02em;
+	font-weight: 600;
+}
+
+.btn-success:hover {
+	background: linear-gradient(135deg, #1464aa 0%, #128f74 100%);
+}
