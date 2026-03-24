@@ -1,0 +1,53 @@
+.heading-panel {
+	background: linear-gradient(135deg, #f0f4ff 0%, #e7f6ff 52%, #eefdf8 100%);
+	border: 1px solid #d9e6ff;
+	box-shadow: 0 16px 38px -24px rgba(19, 39, 90, 0.45);
+}
+
+.subtitle {
+	color: #4c5c74;
+	font-size: 0.98rem;
+	letter-spacing: 0.01em;
+}
+
+.surface-card {
+	background-color: #ffffff;
+	border: 1px solid #e5ebf5;
+	border-radius: 1rem;
+	box-shadow: 0 20px 36px -32px rgba(17, 40, 83, 0.7);
+}
+
+.detail-item {
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.detail-item:hover {
+	background-color: #f7faff;
+	border-color: #c8daf8;
+}
+
+.owner-name {
+	color: #102343;
+	letter-spacing: 0.01em;
+}
+
+.card-number {
+	color: #52617a;
+	font-variant-numeric: tabular-nums;
+}
+
+.expiry {
+	margin-top: 0.2rem;
+	color: #1d5a45;
+	font-weight: 700;
+}
+
+.delete-icon {
+	color: #9aa7ba;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-icon:hover {
+	color: #d03b48;
+	transform: scale(1.05);
+}
